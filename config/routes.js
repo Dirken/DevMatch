@@ -32,9 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+  '/' : {
+         view: 'homepage'
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +45,13 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+  '/users' : {
+       controller: 'main',
+       action: 'showUser'
+  },
+  '/events' : {
+       controller: 'main',
+       action: 'showEvent'
+  }
 
 };
