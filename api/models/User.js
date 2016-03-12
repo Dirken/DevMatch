@@ -14,12 +14,13 @@ module.exports = {
       required: true
     },
     password: {
-    	type: 'string',
-    	required: true
+      type: 'string',
+      required: true
     },
-    user_id:{
-    	type: 'integer',
-    	required: true
+    user_id: {
+      type: 'integer',
+      required: true
     }
+  }
 };
 
