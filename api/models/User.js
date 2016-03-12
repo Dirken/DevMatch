@@ -28,7 +28,9 @@ module.exports = {
     },
     email: {
     	type: 'email',
-        primaryKey: true
+        /*primaryKey: true*/
+        required: true,
+        unique: true
     },
     phone:{
     	type: 'integer'
