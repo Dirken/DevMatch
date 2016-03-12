@@ -16,10 +16,6 @@ module.exports = {
     password: {
       type: 'string',
       required: true
-    },
-    user_id: {
-      type: 'integer',
-      required: true
     }
   }
 };
