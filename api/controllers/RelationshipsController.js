@@ -16,7 +16,7 @@ module.exports = {
     			res.send(400,{ error: "Not user in DB"});
     		}
     		else {
-    			Pet.query('SELECT DISTINCT u1.username FROM User u1 WHERE u1.events in (SELECT u2.events FROM User u2)', function(err, results) {
+    			Pet.query('SELECT DISTINCT * FROM User', function(err, results) {
   				if (err) return res.serverError(err);
   				return res.ok(results.rows);
 				});

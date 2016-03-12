@@ -52,5 +52,17 @@ module.exports.routes = {
   '/test' : {
       controller: 'Relationships',
       action: 'relationships'
+  },
+
+  'get /login': {
+       view: 'login'
+  },
+
+  'post /login': 'AuthController.login',
+
+  '/logout': 'AuthController.logout',
+
+  'get /signup': {
+    view: 'signup'
   }
 };
