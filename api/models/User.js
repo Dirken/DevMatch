@@ -47,9 +47,17 @@ module.exports = {
 		collection: 'language',
 		via:'spoken'
 	},
-	PD:{
+	pd:{
 		collection:'tags',
 		via:'tagged'
+	},
+	ratings: {
+		collection: 'rating',
+		via: 'rated_user'
+	},
+	rate_user: {
+		collection: 'rating',
+		via: 'rater'
 	}
   }
 };
