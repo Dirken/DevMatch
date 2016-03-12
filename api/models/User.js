@@ -20,7 +20,15 @@ module.exports = {
     events:{
     	collection: 'event',
     	via: 'owner'
-    }
+    },
+    lives:{
+    	model: 'city'
+    },
+	speaks:{
+		collection: 'language',
+		via:'spoken'
+	}
+
   }
 };
 

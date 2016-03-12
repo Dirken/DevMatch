@@ -14,6 +14,14 @@ module.exports = {
   		},
   		belongs:{
   			model:'country'
+  		},
+  		citizens:{
+  			collection: 'user',
+  			via:'lives'
+  		},
+  		trips:{
+  			collection: 'event',
+  			via: 'destination'
   		}
   }
 };

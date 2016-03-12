@@ -17,6 +17,10 @@ module.exports = {
     	},
   		description:{
   			type: 'string'
+  		},
+  		destination:{
+  			model: 'city',
+  			unique: true
   		}
   }
 };

@@ -9,7 +9,12 @@ module.exports = {
 
   attributes: {
   		name:{
-  			type:'string'
+  			type:'string',
+  			primaryKey: true
+  		},
+  		spoken:{
+  			collection:'user',
+  			via: 'speaks'
   		}
   }
 };
