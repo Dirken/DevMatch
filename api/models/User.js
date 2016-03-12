@@ -17,11 +17,20 @@ module.exports = {
       type: 'string',
       required: true
     },
+    name:{
+    	type: 'string'
+    },
+    surname:{
+    	type: 'string'
+    },
     age: {
     	type: 'integer'
     },
     email: {
     	type: 'string'
+    },
+    phone:{
+    	type: 'integer'
     },
     gender: {
     	type: 'string',

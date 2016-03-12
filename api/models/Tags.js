@@ -15,6 +15,10 @@ module.exports = {
   		tagged:{
   			collection: 'user',
   			via: 'PD' /*Personal description*/
+  		},
+  		tag_event:{
+  			collection:'event',
+  			via: 'event_tags'
   		}
   }
 };

@@ -21,7 +21,11 @@ module.exports = {
   		destination:{
   			model: 'city',
   			unique: true
-  		}
+  		},
+  		event_tags:{
+  			collection:'tags',
+  			via:'tag_event'
+  		}			
   }
 };
 
