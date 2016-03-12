@@ -7,6 +7,7 @@
 
 module.exports = {
 	relationships: function (req, res) {
+<<<<<<< HEAD
     	var username = req.param("username");
     	user.findByUsername(username).done(function(err,usr){
     		if (err){
@@ -22,7 +23,10 @@ module.exports = {
 				});
         	}
         });
+=======
+        var myQuery = User.find();
+        myQuery.where({'name':{startsWith:'J'}});
+>>>>>>> 188154d3b56b66d31afbbc76475836626e77dd1a
 	}
-	
 };
 
