@@ -48,10 +48,5 @@ module.exports.routes = {
   '/users' : {
        controller: 'main',
        action: 'showUser'
-  },
-  '/events' : {
-       controller: 'main',
-       action: 'showEvent'
   }
-
 };

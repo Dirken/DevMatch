@@ -17,7 +17,10 @@ module.exports = {
     			res.send(400,{ error: "Not user in DB"});
     		}
     		else {
-                //Mostrar a l'usuari
+    			var matching = sails.util.pluck(usr,'username');
+    			User.find({username: matching}).exec(function(err,answer){
+    				res.view({friends: answer});
+    			});
         	}
         });
 	},
@@ -31,9 +34,14 @@ module.exports = {
                 res.send(400,{ error: "Not event in DB"});
             }
             else {
-                //Mostrar a l'usuari
-            }
+    			var matching = sails.util.pluck(usr,'events');
+    			User.find({events: matching}).exec(function(err,answer){
+    				res.view({evnts: answer});
+    			});
+        	}
         });
     }
+
+
 };
 
