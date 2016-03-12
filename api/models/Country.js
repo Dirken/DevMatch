@@ -10,7 +10,11 @@ module.exports = {
   attributes: {
   		name:{
   			type: 'string',
-  			required: true
+  			primaryKey: true
+  		},
+  		cities:{
+  			collection: 'city',
+  			via: 'belongs'
   		}
   }
 };

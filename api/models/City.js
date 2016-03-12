@@ -8,13 +8,12 @@
 module.exports = {
 
   attributes: {
-  		city_country: {
-  			type: 'string',
-  			required: true
-  		},
   		name:{
   			type: 'string',
-  			required: true
+  			primaryKey: true
+  		},
+  		belongs:{
+  			model:'country'
   		}
   }
 };

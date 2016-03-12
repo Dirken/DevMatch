@@ -11,16 +11,15 @@ module.exports = {
 
     username: {
       type: 'string',
-      required: true
+      primaryKey: true
     },
     password: {
       type: 'string',
       required: true
     },
-    user_id: {
-    	type: 'integer',
-    	required: true,
-    	unique: true
+    events:{
+    	collection: 'event',
+    	via: 'owner'
     }
   }
 };

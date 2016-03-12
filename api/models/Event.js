@@ -10,8 +10,7 @@ module.exports = {
   attributes: {
   		event_id:{
   			type: 'integer',
-  			required: true,
-  			unique: true
+  			primaryKey: true
   		},
   		owner:{
     		model: 'user'
