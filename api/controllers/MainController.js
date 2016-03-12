@@ -8,7 +8,7 @@
 module.exports = {
 
 	showUser: function (req, res) {
-    	var username = req.param("username");
+    	/*var username = req.param("username");
     	user.findByUsername(username).done(function(err,usr){
     		if (err){
     			res.send(500, { error: "DB Error" });
@@ -22,10 +22,10 @@ module.exports = {
     				res.view({friends: answer});
     			});
         	}
-        });
+        });*/
 	},
     showEvents: function (req, res) {
-    	var events = req.param("event_id");
+    	/*var events = req.param("event_id");
         Event.findByUsername(events).done(function(err,evn){
             if (err){
                 res.send(500, { error: "DB Error" });
@@ -39,7 +39,7 @@ module.exports = {
     				res.view({evnts: answer});
     			});
         	}
-        });
+        });*/
     }
 
 
