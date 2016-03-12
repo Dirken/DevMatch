@@ -49,10 +49,7 @@ module.exports.routes = {
        controller: 'main',
        action: 'showUser'
   },
-  '/test' : {
-      controller: 'match',
-      action: 'find'
-  },
+  'get /test' : 'MatchController.find',
 
   'get /login': {
        view: 'login'

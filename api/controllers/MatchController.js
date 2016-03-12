@@ -8,7 +8,10 @@
 module.exports = {
 
 	find: function (req, res){
-	//	User.find({name: 'wtf'});	
+		User.query('SELECT * FROM user'), function(err, results) {
+			if(err) res.send(400);
+			else res.json(results);
+		}	
 	}
 	
 };
