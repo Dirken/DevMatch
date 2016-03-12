@@ -49,10 +49,10 @@ module.exports.routes = {
        controller: 'main',
        action: 'showUser'
   },
-  '/test' : {
+  /*'/test' : {
       controller: 'Relationships',
       action: 'relationships'
-  },
+  },*/
 
   'get /login': {
        view: 'login'
